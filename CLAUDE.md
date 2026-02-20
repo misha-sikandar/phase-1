@@ -1,4 +1,4 @@
-# Claude Code Rules
+﻿# Claude Code Rules
 
 This file is generated during init for the selected agent.
 
@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Current Project Context
+- **Language**: Python 3.11
+- **Framework**: Built-in argparse module for CLI parsing
+- **Storage**: In-memory only (Python lists/dictionaries - no persistence)
+- **Project Type**: Single console application
+- **Architecture**: Phase I - Console Application with in-memory storage only, no persistence, deterministic behavior, single-process execution

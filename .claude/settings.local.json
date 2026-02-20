@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch --all --prune)",
+      "Bash(ls -d specs/*/)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -Json)",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/create-new-feature.ps1'' -Json -ShortName ''todo-console-app'' -Number 1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/create-new-feature.ps1'' -Json -ShortName ''todo-console-app'' -Number 1 ''Phase 1 Specification – Todo Evolution Console Application''\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/setup-plan.ps1'' -Json\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/update-agent-context.ps1'' -AgentType claude\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"Get-Content ''F:\\\\phase 1\\\\CLAUDE.md'' | Select-String ''Python\\\\|argparse\\\\|in-memory''\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/check-prerequisites.ps1'' -Json\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"& ''.specify/scripts/powershell/check-prerequisites.ps1'' -Json -RequireTasks -IncludeTasks\")",
+      "Bash(dir \"F:\\\\phase 1\\\\specs\\\\001-todo-console-app\\\\checklists\"\" 2>nul || echo \"No checklists directory found \")",
+      "Bash(ls \"F:\\\\phase 1\\\\specs\\\\001-todo-console-app\\\\checklists\"\" 2>nul || echo \"No checklists directory found \")",
+      "Bash(python -m pytest tests/unit/ -v)",
+      "Bash(pip install pytest)",
+      "Bash(python -m pytest tests/integration/ -v)",
+      "Bash(python todo_app.py add \"Test end-to-end functionality\" --priority=high)",
+      "Bash(python todo_app.py list)",
+      "Bash(python todo_app.py --help)",
+      "Bash(python todo_app.py add \"Final test of the application\" --priority=medium)"
+    ]
+  }
+}
